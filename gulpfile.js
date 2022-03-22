@@ -7,6 +7,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var uglify = require("gulp-uglify");
 var notify = require("gulp-notify");
 var zip = require("gulp-zip");
+var livereload = require("gulp-livereload");
 // ===== Task Html =====
 gulp.task("html", function () {
   return gulp
@@ -77,23 +78,23 @@ gulp.task("compress", function () {
     .pipe(notify("Files Is Compressed To Zip "));
 });
 // ===== Task Watch =====
-gulp.task('watch', function (){
-    require("./server.js");
-    livereload.listen();
-    // = Html
-    gulp.watch("project/pug/**/*.pug", gulp.series("html"));
-    // = Css
-    gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
-    gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
-    // = Javascript
-    gulp.watch("project/js/js/**/*.js", gulp.series("js"));
-    gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
-    // = Images
-    gulp.watch("project/images/**/*", gulp.series("compressImages"));
-    // = Zip
-    gulp.watch("dist/**/*.*", gulp.series("compress"));
-    // = Upload
-    // gulp.watch("dist/**/*.*", gulp.series("deploy"));
-  });
-  // = Default
-  gulp.task("default", gulp.series("watch"));
+gulp.task("watch", function () {
+  require("./server.js");
+  livereload.listen();
+  // = Html
+  gulp.watch("project/pug/**/*.pug", gulp.series("html"));
+  // = Css
+  gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
+  gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
+  // = Javascript
+  gulp.watch("project/js/js/**/*.js", gulp.series("js"));
+  gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
+  // = Images
+  gulp.watch("project/images/**/*", gulp.series("compressImages"));
+  // = Zip
+  gulp.watch("dist/**/*.*", gulp.series("compress"));
+  // = Upload
+  // gulp.watch("dist/**/*.*", gulp.series("deploy"));
+});
+// = Default
+gulp.task("default", gulp.series("watch"));
