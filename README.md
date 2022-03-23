@@ -17,7 +17,7 @@ We put true focus on our design process, the concept, prototypes and design.
 
 # Plugins
 
-1. Swioer
+1. Swier [Website](https://swiperjs.com/)
 
 # Website
 
