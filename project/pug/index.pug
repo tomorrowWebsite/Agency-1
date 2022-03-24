@@ -7,16 +7,254 @@ html(lang="en")
     // ============================= Start Swiper  ============================= 
     link(rel="stylesheet" href="css/libs/swiper/swiper-bundle.min.css")
     // ============================= End Swiper  ============================= 
+    //- Style
+    link(rel="stylesheet" href='css/style.css')
 
 
   body 
     header(class="header" id='header')
-      nav(class="nav")
+      nav(class="navbar navbar-expand-lg navbar-light fixed-top" id='navbar')
+        div(class='container')
+          a(class="navbar-brand" href="index.html")
+            img(src="images/logo/favicon.png" alt="")
+            span(class='') Grit
+          button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="uil-bars")
+          div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            div(id='open-menu' class='open-menu')
+              i(class='uil uil-bars')
+            ul(class="navbar-nav me-auto mb-2 mb-lg-0" id='navbar-links')
+              li(class="nav-item")
+                a(class="nav-link active" aria-current="page" href="index.html") Home
+              li(class="nav-item")
+                a(class="nav-link " aria-current="page" href="page.html") Page
+              li(class="nav-item")
+                a(class="nav-link " aria-current="page" href="blog.html") Blog
+              li(class="nav-item")
+                a(class="nav-link " aria-current="page" href="contact.html") Contact
+            form(class="d-flex")
+              input(class="search" type="search" placeholder="Search" aria-label="Search")
+            //- a(id='open-search' class='open-search')
+            //-   i(class='uil uil-search')
+
+    //- home-banner
+    section(class="home-banner")
+      div(class='wrapper-disc')
+        div(class='content')
+          div(class='text')
+            p(class='') Dcrazed says
+            h3(class='') We put true  
+              span(class='liner') focus 
+              |on our design 
+              span(class='liner') process, 
+              | the concept, prototypes and  
+              span(class='liner') design. 
+          div(class='icon')
+            a(class='arrow bounce')
+              i(class="fa fa-arrow-down fa-2x") 
+
+
+    //- About us
+    section(class="about-us")
+      div(class='container')
+        div(class='section-title text-center wow fadeInUp')
+          h2(class='') About us
+          a(href="page.html") Mission brief
+          p(class='') Creating websites from the web Studio 
+            span(class='') "Ui Team"
+            | as a tool for business starts with Analytics. Goals and the ways to achieve them are defined. The goal is to encourage visitors to use the service or to buy goods in your company instead of the competitor.
+        div(class='about-features wow fadeInUp')
+          div(class='box')
+            i(class='uil uil-comment')
+            div(class='')
+              h5(class='') Brand strategy
+              p(class='') A brand is a name, term, design, symbol or other feature that distinguishes
+          div(class='box')
+            i(class='uil uil-image')
+            div(class='')
+              h5(class='') Art direction
+              p(class='') Art director is the title for a variety of similar job functions in theater
+          div(class='box')
+            i(class='fas fa-birthday-cake')
+            div(class='')
+              h5(class='') Graphic design
+              p(class='') Graphic design is the process of visual communication, and problem-solving
+          div(class='box')
+            i(class='uil uil-brackets-curly')
+            div(class='')
+              h5(class='') Web Development
+              p(class='') Web development is a broad term for the work involved in developing a web site
+
+
+
+    //- About us
+    section(class="home-contact-block")
+      div(class='container')
+        div(class='')
+          p(class='') Increase leads, build a professional website and be awesome..
+          a(href="contact.html") Contact us
+
+    //- our-work-block
+    section(class="our-work-block")
+      div(class='container')
+        div(class='section-title text-center wow fadeInUp')
+          h2(class='') Our work
+          a(href="portfolio.html")  go to portfolio
+        div(class='work')
+          div(class='item')
+            img(src="images/homePage/01-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+          div(class='item')
+            img(src="images/homePage/02-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+          div(class='item')
+            img(src="images/homePage/03-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+          div(class='item')
+            img(src="images/homePage/04-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+          div(class='item')
+            img(src="images/homePage/05-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+          div(class='item')
+            img(src="images/homePage/06-screenshot.jpg" alt="")
+            div(class='content')
+              div(class='wrapper')
+                div(class='title') Codetowp branding
+                p(class='line')
+                div(class='link')
+                  a(href="#") Design 
+                  |/ 
+                  a(href="#")  brand
+                div(class='icon')
+                  i(class='fas fa-search')
+                  i(class='fas fa-link')
+
+    //- process
+    section(class='process' id='process')
+      div(class='container')
+        div(class='section-title text-center wow fadeInUp')
+          h2(class='') The process
+        div(class='wrapper')
+          ul(class='nav nav-tabs')
+            li( @click="activeTab = '1'" :class="[activeTab === '1' ? 'active' : '']") 
+              a(class=''  ) 
+                i(class='fas fa-star')
+                h5(class='') 01. Concept
+            li(class='') 
+              a(class='' @click="activeTab = '2'" :class="[activeTab === '2' ? 'active' : '']" ) 
+                i(class='fas fa-copy')
+                h5(class='') 02. Prototyping
+            li(class='') 
+              a(class='' @click="activeTab = '3'" :class="[activeTab === '3' ? 'active' : '']" ) 
+                i(class='ri-macbook-line')
+                h5(class='') 03. Design
+            li(class='') 
+              a(class='' @click="activeTab = '4'" :class="[activeTab === '4' ? 'active' : '']" ) 
+                i(class='ri-code-line')
+                h5(class='') 04. Development
+          div(class="tabs-content")
+            div(class="content-one" v-if="activeTab === '1'") 
+              div(class='box')
+                div(class='img')
+                  img(src="images/homePage/tab-1.jpg" alt="")
+                div(class='text')
+                  h2(class='h1') Professional website design
+                  p(class='') Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.
+                  a(href="#")  Read More
+            div(class="content-tow" v-if="activeTab === '2'") 
+              div(class='box')
+                div(class='img')
+                  img(src="images/homePage/03-screenshot.jpg" alt="")
+                div(class='text')
+                  h2(class='h1') Sketch like a PRO
+                  p(class='') Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.
+                  a(href="#")  Read More
+
+            div(class="content-three" v-if="activeTab === '3'") 
+              div(class='box')
+                div(class='img')
+                  img(src="images/homePage/02-screenshot.jpg" alt="")
+                div(class='text')
+                  h2(class='h1') Make the design
+                  p(class='') Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.
+                  a(href="#")  Read More
+
+            div(class="content-four" v-if="activeTab === '4'") 
+              div(class='box')
+                div(class='img')
+                  img(src="images/homePage/tab-1.jpg" alt="")
+                div(class='text')
+                  h2(class='h1') Code like a star
+                  p(class='') Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.
+                  a(href="#")  Read More
+
+
+
+
+
+
+
+
 
 
     include script/script.pug
     // Swiper JS
     script(src="js/libs/swiper/swiper-bundle.min.js")
+    script(src="js/libs/vue/vue.js")
+    //- script(src="https://unpkg.com/vue@3")
+    script(src="js/app.js")
+    script(src="js/script.js")
     script(src="http://localhost:35729/livereload.js")
 
 

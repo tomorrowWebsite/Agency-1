@@ -1,2 +1,2 @@
-
+function scrollHeeder(){let e=document.getElementById("navbar");80<=this.scrollY?e.classList.add("scroll-header"):e.classList.remove("scroll-header")}window.addEventListener("scroll",scrollHeeder);let openMenu=document.getElementById("open-menu"),navbarLinks=document.getElementById("navbar-links");openMenu.addEventListener("click",function(){navbarLinks.classList.toggle("show-navbar-nav"),this.children[0].classList.toggle("uil-multiply")});
 //# sourceMappingURL=script.js.map
