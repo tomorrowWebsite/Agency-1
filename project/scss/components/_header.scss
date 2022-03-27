@@ -34,6 +34,9 @@
           }
         }
       }
+      .navbar-toggler {
+        color: #fff;
+      }
       .collapse {
         .open-menu {
           color: #fff;
@@ -43,6 +46,9 @@
           cursor: pointer;
           @include transitionAll(all, 0.5s, linear);
           z-index: 5;
+          @include xs-media {
+            display: none;
+          }
           i {
             @include transitionAll(all, 0.5s, linear);
           }
@@ -54,7 +60,11 @@
           opacity: 0;
           z-index: -1;
           @include transitionAll(all, 0.5s, linear);
-
+          @include xs-media {
+            right: 0;
+            opacity: 1;
+            z-index: 1;
+          }
           // Li
           li.nav-item.active {
           }

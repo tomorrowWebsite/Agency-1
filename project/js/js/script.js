@@ -16,9 +16,9 @@ function scrollHeeder() {
 }
 window.addEventListener("scroll", scrollHeeder);
 
-let openMenu = document.getElementById("open-menu");
-let navbarLinks = document.getElementById("navbar-links");
-openMenu.addEventListener("click", function () {
+let openMenu1 = document.getElementById("open-menu");
+openMenu1.addEventListener("click", function () {
+  let navbarLinks = document.getElementById("navbar-links");
   navbarLinks.classList.toggle("show-navbar-nav");
   this.children[0].classList.toggle("uil-multiply");
 });
