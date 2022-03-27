@@ -194,11 +194,11 @@
           <ul class="nav nav-tabs">
             <li @click="activeTab = '1'" :class="[activeTab === '1' ? 'active' : '']"> <a> <i class="fas fa-star"></i>
                 <h5>01. Concept</h5></a></li>
-            <li> <a @click="activeTab = '2'" :class="[activeTab === '2' ? 'active' : '']"> <i class="fas fa-copy"></i>
+            <li @click="activeTab = '2'" :class="[activeTab === '2' ? 'active' : '']"> <a> <i class="fas fa-copy"></i>
                 <h5>02. Prototyping</h5></a></li>
-            <li> <a @click="activeTab = '3'" :class="[activeTab === '3' ? 'active' : '']"> <i class="ri-macbook-line"></i>
+            <li @click="activeTab = '3'" :class="[activeTab === '3' ? 'active' : '']"> <a> <i class="ri-macbook-line"></i>
                 <h5>03. Design</h5></a></li>
-            <li> <a @click="activeTab = '4'" :class="[activeTab === '4' ? 'active' : '']"> <i class="ri-code-line"></i>
+            <li @click="activeTab = '4'" :class="[activeTab === '4' ? 'active' : '']"> <a> <i class="ri-code-line"></i>
                 <h5>04. Development</h5></a></li>
           </ul>
           <div class="tabs-content">
@@ -231,7 +231,7 @@
             </div>
             <div class="content-four" v-if="activeTab === '4'"> 
               <div class="box">
-                <div class="img"><img src="images/homePage/tab-1.jpg" alt=""></div>
+                <div class="img"><img src="images/homePage/01-screenshot.jpg" alt=""></div>
                 <div class="text">
                   <h2 class="h1">Code like a star</h2>
                   <p>Apes and spider monkeys move theirbody from branch to branch by swaying hands, but most monkeys do not. They just run and jump from branch to branch.</p><a href="#"> Read More</a>
@@ -242,6 +242,120 @@
         </div>
       </div>
     </section>
+    <section class="count">
+      <div class="container">
+        <div class="wrapper">
+          <div class="item">
+            <div class="icon"><i class="uil uil-heart"></i></div>
+            <div class="number countTo" data-from="0" data-to="11" data-speed="3000"> </div>
+            <div class="text">CLIENTS</div>
+          </div>
+          <div class="item">
+            <div class="icon"><i class="fas fa-envelope fa-fw"></i></div>
+            <div class="number countTo" data-from="0" data-to="316" data-speed="6000"> </div>
+            <div class="text">LEADS</div>
+          </div>
+          <div class="item">
+            <div class="icon"><i class="fas fa-folder fa-fw"></i></div>
+            <div class="number countTo" data-from="0" data-to="5975" data-speed="9000"> </div>
+            <div class="text">WEBSITES</div>
+          </div>
+          <div class="item">
+            <div class="icon"><i class="fas fa-coffee"></i></div>
+            <div class="number countTo" data-from="0" data-to="316" data-speed="6000"> </div>
+            <div class="text">COFFEE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-block">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="img"><img src="images/homePage/01.jpg" alt=""></div>
+                <div class="disc">
+                  <p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="name">
+                  <h4> Dean Martin</h4>
+                  <h5> CEO Acme Inc.</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="img"><img src="images/homePage/01.jpg" alt=""></div>
+                <div class="disc">
+                  <p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="name">
+                  <h4> Rima Martin</h4>
+                  <h5> CEO Food Inc.</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="img"><img src="images/homePage/01.jpg" alt=""></div>
+                <div class="disc">
+                  <p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="name">
+                  <h4> Joe Martin</h4>
+                  <h5>  CEO Chat Inc.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-news-block">
+      <div class="container">
+        <div class="section-title text-center wow fadeInUp">
+          <h2>Latest news</h2><a href="#"> See the blog</a>
+        </div>
+        <div class="wrapper-news">
+          <div class="news"><img src="images/homePage/04-screenshot.jpg" alt="">
+            <p class="title">10 Incredible Quotes To Guide Your Life</p>
+            <div class="bottom"><span>Web-design, </span><span>Front-end</span></div>
+          </div>
+          <div class="news"><img src="images/homePage/03-screenshot.jpg" alt="">
+            <p class="title">10 Incredible Quotes To Guide Your Life</p>
+            <div class="bottom"><span>Web-design, </span></div>
+          </div>
+          <div class="news"><img src="images/homePage/02-screenshot.jpg" alt="">
+            <p class="title">10 Incredible Quotes To Guide Your Life</p>
+            <div class="bottom"><span>Web-design, </span><span>Front-end</span></div>
+          </div>
+          <div class="news"><img src="images/homePage/01-screenshot.jpg" alt="">
+            <p class="title">10 Incredible Quotes To Guide Your Life</p>
+            <div class="bottom"><span>Front-end</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="container">
+        <div class="content">
+          <div class="copyright">
+            <p>© 2022 <span>Grit. </span>All rights reserved</p>
+          </div>
+          <div class="pages"> 
+            <ul> 
+              <li><a href="#">faq</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="">blog </a></li>
+              <li><a href="">pricing </a></li>
+            </ul>
+          </div>
+          <div class="social-icon"><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-dribbble"></i></div>
+        </div>
+      </div>
+    </footer>
     <script src="js/libs/JQuery/jquery-3-6-0.min.js"></script>
     <script src="js/libs/bootstrap/bootstrap-5.0.1-min.js"></script>
     <script src="js/script.js"> </script>
@@ -249,6 +363,8 @@
     <script src="js/libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/libs/vue/vue.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/libs/count-to/jquery.countTo.js"></script>
+    <script src="js/homePage.js"></script>
     <script src="js/script.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>

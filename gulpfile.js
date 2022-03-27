@@ -64,6 +64,20 @@ gulp.task("app", function () {
       .pipe(livereload())
   );
 });
+// ===== Task Js =====
+gulp.task("homePage", function () {
+  return (
+    gulp
+      .src("project/js/homePage/**/*.js")
+      .pipe(sourcemaps.init())
+      .pipe(concat("homePage.js"))
+      .pipe(uglify())
+      // .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest("dist/js"))
+      .pipe(notify("homePage Task Is Done"))
+      .pipe(livereload())
+  );
+});
 // ===== Task Libs Js =====
 gulp.task("libs-js", function () {
   return gulp
@@ -102,6 +116,7 @@ gulp.task("watch", function () {
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
   gulp.watch("project/js/js/**/*.js", gulp.series("js"));
+  gulp.watch("project/js/homePage/**/*.js", gulp.series("homePage"));
   gulp.watch("project/js/app/**/*.js", gulp.series("app"));
   gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
   // = Images
